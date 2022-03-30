@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos difererentes ou simplismente aumente ou diminuem o tamanho do seu navegador</p><br>
+    <br>
+    <p>OBSERVAÇÃO: NUNCA UTILIAR IMAGENS COM ESPAÇOS, USAR "_" OU "-" NO LUGAR DOS ESPAÇOS.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/photo_p.png">
+        <source media="(max-width: 1000px)" srcset="Imagens/photo_m.png">
+        <img src="Imagens/photo g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo um aúdio</h1>
+    <audio src="midia/musica_audio.mp3" controls autoplay loop></audio>
+    <p>Para os outros formatos de aúdio que não são mp3 se utiliza essa ordem, semelhante a foto flexível.</p>
+    vale ressalta que audio reload é para ir baixando o arquivo em mp3 e usar a modalidade metadata baixar alguns dados do arquivo.
+    <audio preload metada="midia/musica_audio.mp3" controld autoplay></audio>
+
+    <audio >
+        <source src="midia/musica_audio.mp3" type="audio/mpeg">
+        <source src="midia/musica_audio.mp3" type="audio/ogg">
+        <source src="midia/musica_audio.mp3" type="audio/wav">
+    </audio>
+</body>
+</html>

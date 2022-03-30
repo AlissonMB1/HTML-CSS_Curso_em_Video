@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            /*São três fontes, pq se no navegador do usuário a primeira não abrir, irá tentar a segunda e depois a terceira. O site w3shools.com, tem as fontes que são usadas no Google. Se colocar sem serifa como estar ou outra característica o navegador vai procurar a fonte que atende essa exigência e que tem no navegador. Por isso é bom terminar com essa característica ou nome generico tipo "sans serif".*/
+
+            /*
+            Medidas absolutas:
+            cm, mm, in(polegada), px, pt (o tamanho da letra no software de texto, ex: word), pc(esse dois ultimos não são muito utilizado em tela). Tamanho que aparece, normalmente nos navegadores é de 16px.
+            
+            Medidas relativas:
+            em (relativo ao m maiusculo de uma fonte), ex (relativo a altura x da fonte), rem (relativo a fonte do m configurada no body), vw(largura da tela, porcentagem da tela exibida), vh(relativo a altura da tela), %(porcentegem). Normalmente iremos utilizar a em, com as recomendação da W3C "recomenda usar px e em, o em é mais interessante que por ser relativo acaba se moldando de acordo com a tela.".
+            16px geralmente é 1em
+
+            */
+            font-size: 1em;            
+        }
+        h1, h2 {
+            font: italic bolder 3em arial, sans-serif;
+            color: rgba(0, 0, 0, 0.349);
+        }
+    
+        /*
+        #font-weight = ao peso da letra
+        weight - peso(lighter, normal, bold e bolder, são os estilos ou de 100 a 900; ou utiliza ctrl + espaço); widht - largura; height - altura.
+        #text-decoration tem a funçao de sublinhado(underline)
+        # font-style tem a opção do itálico
+       
+        shorthand font (várias caracterśticas na mesma linha), mas deve ser nessa ordem:
+
+        -font-style -> font-weight -> font-size -> font-family
+        Ex:font: italic bolder 3em arial, sans-serif;
+        font-style = italic
+        font-weight = bolder
+        font-size = 3em
+        font-family = arial, sans-serif;
+
+        */
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laborum iure ipsum, dolorem molestiae numquam fuga eos ipsam ullam officia maxime soluta ut excepturi incidunt. Corrupti perferendis aliquid consequuntur corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatibus, deserunt in, molestias impedit soluta rerum ab aperiam eos iure obcaecati repellat suscipit illo quam delectus id laboriosam eligendi temporibus.
+    </p>
+    <h2>Subtítulo do trabalho</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae esse quasi ratione ad illo dicta consequuntur rem placeat quia eaque explicabo, cupiditate dolore eos! Sint esse aliquid earum molestiae voluptatibus.</p>
+</body>
+</html>

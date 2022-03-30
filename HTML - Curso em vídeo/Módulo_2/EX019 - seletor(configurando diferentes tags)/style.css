@@ -1,0 +1,39 @@
+@charset "UTF8"; 
+
+/*
+em HTML é id = em CSS é #
+em HTML é class = em CSS é .
+*/
+
+/*
+Não pode utilizar mais de um id no mesmo projeto, se já tiver utilizado o id, deve usar o class. A class pode ser multiplas.
+*/
+body{
+  background-color: rgba(78, 240, 240, 0.521);
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+   color: rgb(150, 3, 3);
+  }
+  #principal{
+      text-align: center;
+      color: cornflowerblue;
+      background-color: crimson;
+  }
+  h2{
+color: chocolate;
+  }
+  .basico {
+      color: darkblue;
+      font-weight: bold;
+      background-color: seagreen;
+  }
+  .intermediario{
+    color: chartreuse
+}
+  .avancado{
+color: red;
+  }
+  .nao{
+      color: salmon;
+  }

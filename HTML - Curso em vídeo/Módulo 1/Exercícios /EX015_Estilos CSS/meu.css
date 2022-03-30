@@ -1,0 +1,17 @@
+@charset "UFT-8"
+<style> 
+Body { 
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: ; = 20px}
+    h1{
+        color: blueviolet;
+        background-color: cornflowerblue;
+    }
+    h2{
+        color: chartreuse;
+    }
+    p{
+        text-align: justify;
+    }
+</style>

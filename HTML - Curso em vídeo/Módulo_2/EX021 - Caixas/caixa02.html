@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: greenyellow;
+            margin:  9px;
+            }
+            nav >a{
+                color: cornflowerblue;
+                box-shadow: 1px 1px 1px black;/* efeito sombra, um pixel é a esquerda, baixo e alongado*/
+            }
+        header{
+            background-color: grey;
+            padding: 10px;
+            margin: 15px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 0px 20px 40px 60px;/* efeito do arrendodamento da caixa.*/
+        }
+        section > notice {
+         background-color: coral;
+        }
+        article{
+            background-color: cadetblue;
+        }
+        footer{
+            background-color: violet;
+            color: teal;
+            padding: 10px;
+            margin: 6px;
+            border-radius: 0px 20px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.644);
+        }
+        footer > p{
+            margin: 0px;   
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;/* Serve para distanciar o objeto do rodapé.*/
+            background-color: white;
+            border-radius: 50%;/* Pode se utilizar em porcentagem para arrendodar.*/
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+     <nav>
+        <a href="">Link</a>
+        <a href="">LInkr</a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+     </nav>   
+    </header> 
+    <main>
+     <section id=inside>
+
+     </section>
+     <section id=notice>
+         <article>
+             <h2>o Brasil</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident, repellendus quod minima est, dolore voluptatem expedita facilis eius inventore quidem deserunt officia veniam in, adipisci sunt enim repellat omnis?</p>
+         </article>
+         <aside>
+             dshuçnearnĩbrd
+         </aside>
+     </section>
+    </main>
+    <footer>
+        <p>Produzido por Desenvagro</p>
+    </footer>
+    <div id=bola>
+    </div>
+</body>
+</html>

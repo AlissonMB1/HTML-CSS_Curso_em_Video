@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes esternas</title>
+    <style>
+        @font-face {
+            font-family: 'artistico';
+            src: url('fontes/artistic\ calligraphy.otf') format('opentype'), url('fontes/artistic\ calligraphy.ttf') format('truetype'), url();
+            font-weight: normal;
+            font-style: italic;
+        /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (apple advanced typograph)
+            - svg
+         Nem todos os navegadores lêem todos os arquivos, deve testa-los antes. MAs gerlamente o otf e ttf abrange todos os navegadores.    
+        */
+        }
+        body{
+        font-family:Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+        font-family: 'artistico' ,Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*
+        Dafont.com é outra plataforma de fontes. Deve ver se ela tem letras com acento em baixo
+Para chamar a fonte, usa a entrada de @font-face e exporta a fonte ao VSC.
+        
+        */
+    </style>
+</head>
+<body>
+    <h1>títulos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea necessitatibus qui, in quaerat quia facere laboriosam quos error! Recusandae quis omnis doloribus, consequuntur dolore laboriosam tempora repudiandae cupiditate nobis.</p>
+</body>
+</html>
