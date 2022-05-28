@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
-        body{
+        body{/*
             background-color: black;
             background-image: url(Imagens/wallpaper003.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover; /*100% da imagem para a tela, é responsivel; cover ele mostra a imagem toda e corta parte dela para permitir preenchimento total; contain a imagem é mostrada toda, porem ela não quebra e aparece as bordas fora dela.*/
-            /*Interessante o usuário consumir uma cor de fundo até a imagem carregar.*/
+            /*Interessante o usuário consumir uma cor de fundo até a imagem carregar.*/ /*
+            background-attachment: fixed; /*vínculo que é travar o fundo*/  
+
+            ou 
+            background: black url('Imagens/wallpaper003.jpg') no-repeat fixed;
+            background-size: cover; 
+
+            /*Essa parada aí em cima é um shortlhand que é um código mais curto na seguinte ordem: cor - imagem - position - repeat - attachment*/
+        
         }
-        main{
+        
+        
+        main {
             background-color: white;
-            width: 400px;
+            max-width: 400px; /*Tamanho máximo que a caixa de texto pode ter*/
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -28,6 +38,11 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro laudantium nam doloremque in quae. Magnam architecto odit, sint minus quas quidem saepe dignissimos quam iste, obcaecati harum dolorem omnis natus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut architecto vitae voluptatum corporis iste nulla non delectus beatae doloribus fugiat vel, sit totam ipsam accusamus! Reiciendis provident asperiores iure qui?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, iste. Nobis ducimus quas nesciunt deserunt ut vitae necessitatibus consequuntur commodi neque exercitationem. Praesentium ipsa enim voluptate exercitationem quod accusantium aspernatur!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro laudantium nam doloremque in quae. Magnam architecto odit, sint minus quas quidem saepe dignissimos quam iste, obcaecati harum dolorem omnis natus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut architecto vitae voluptatum corporis iste nulla non delectus beatae doloribus fugiat vel, sit totam ipsam accusamus! Reiciendis provident asperiores iure qui?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, iste. Nobis ducimus quas nesciunt deserunt ut vitae necessitatibus consequuntur commodi neque exercitationem. Praesentium ipsa enim voluptate exercitationem quod accusantium aspernatur!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro laudantium nam doloremque in quae. Magnam architecto odit, sint minus quas quidem saepe dignissimos quam iste, obcaecati harum dolorem omnis natus.
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut architecto vitae voluptatum corporis iste nulla non delectus beatae doloribus fugiat vel, sit totam ipsam accusamus! Reiciendis provident asperiores iure qui?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At, iste. Nobis ducimus quas nesciunt deserunt ut vitae necessitatibus consequuntur commodi neque exercitationem. Praesentium ipsa enim voluptate exercitationem quod accusantium aspernatur!
         </p>
