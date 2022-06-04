@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;/*Esses dois pontos deixam o conteúdo mais próximo*/
+}
+html, body {
+    min-height: 100vh;/* 100% da vilheight, vw vil weight*/
+    background-color: darkgrey;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /*ou o transform: uppercase, faz todas as letras ficarem grande*/
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none; /*retira o sublinhado do link*/
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{ /*Efeito no link quando o mouse passa por cima*/
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;/*serve para colocar o espaço entre uma estrofe e outra,lembrar do conceito de caixa, 10% da altura para cima e baixo*/
+    line-height: 2em;/*O espaçamento entre as linhas*/
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgba(24, 23, 23, 0.767);
+    color: white;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: black;
+    }
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
