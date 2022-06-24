@@ -11,15 +11,34 @@
         }
         table{
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+          font-size: 1.5em;
+          font-weight: bold;
+          padding: 10px;
+          background-color: lightseagreen;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+        thead > tr > th{
+          position: sticky;
+          top: -1;
+          background-color: gray;
+        }
+        tbody > tr:nth-child(odd){
+          background-color: lightcoral;
+        }
+        tbody > tr:nth-child(even){
+          background-color: lightcyan;
+        }/*o entre parentese odd = par (ou 2n-1) e even (ou 2n)= impar, 2n = de dois em dois.*/
         .num{
             text-align: center;
         }
@@ -37,6 +56,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia de tabelas grandes
             TABLE
+                CAPTION = legenda vai em cima             
                 THEAD
                    TR, TD, TH
                 TBODY
@@ -44,11 +64,13 @@
                 TFOOT
                    TR, TD, TH-->
 <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
-        <th>Posição</th>
-        <th>Estado</th>
-        <th>População</th>
-        <Th>% da população total</Th> <!--Todo th centraliza e deixa em negrito-->
+      <tr><th scope="col">Posição</th>
+        <th scope="col">Estado</th>
+        <th scope="col">População</th>
+        <Th scope="col">% da população total</Th> <!--Todo th centraliza e deixa em negrito,o scope informa que o Th é um título.-->
+      </tr>       
     </thead>
     <tbody>
         <tr>
@@ -215,7 +237,7 @@
           </tr>
     </tbody>
     <tfoot>
-        <th class="ajustar">Total de habitantes</th>
+        <th class="ajustar" scope="row" colspan="2"     >Total de habitantes</th>
         <td><strong>213 317 639</strong></td>
         <td><strong>100%</strong></td>
     </tfoot>
